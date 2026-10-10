@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Guía visual paso a paso para crear una máquina virtual con VirtualBox e instalar Ubuntu.">
+<title>Máquina Virtual | Guía paso a paso</title>
+<style>
+:root{--bg:#0d0c14;--panel:#171621;--red:#ff1535;--white:#f7f7fb;--muted:#c6c4d1;--line:#34313f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}
+header{min-height:82vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(120deg,rgba(10,9,16,.94),rgba(10,9,16,.65)),url('imagenes/229340.jpg') center/cover}
+nav{position:absolute;top:0;left:0;right:0;padding:18px clamp(20px,5vw,70px);display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff20}
+.logo{font-weight:900;letter-spacing:2px}.logo span{color:var(--red)}
+nav a{font-size:.9rem;text-decoration:none;margin-left:20px;color:#eee}
+.hero{width:min(1100px,90%);margin:70px auto 35px}
+.eyebrow{color:#ff657a;text-transform:uppercase;letter-spacing:4px;font-weight:bold;font-size:.85rem}
+h1{font-size:clamp(3rem,9vw,7rem);line-height:.95;letter-spacing:-3px;margin:18px 0}
+h1 span{color:var(--red)}
+.hero p{max-width:650px;color:#e0deea;font-size:clamp(1rem,2vw,1.25rem)}
+.button{display:inline-block;background:var(--red);color:white;text-decoration:none;padding:13px 22px;border-radius:8px;font-weight:bold;margin-top:18px}
+main{width:min(1100px,90%);margin:auto}
+.intro{padding:65px 0 25px;max-width:760px}
+h2{font-size:clamp(2rem,5vw,3rem);margin:0 0 12px}
+.intro p,.section-lead{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:20px 0 70px}
+.step-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .2s,border-color .2s}
+.step-card:hover{transform:translateY(-4px);border-color:var(--red)}
+.step-card img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover;background:#111}
+.card-copy{padding:20px}
+.tag{font-size:.75rem;letter-spacing:1px;text-transform:uppercase;color:#ff7184;font-weight:bold}
+h3{font-size:1.3rem;margin:8px 0}
+.card-copy p{color:var(--muted);margin:0}
+.team{background:#171621;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:55px 0}
+.team-inner{width:min(1100px,90%);margin:auto}
+.team-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:25px}
+.person{padding:15px;border:1px solid var(--line);border-radius:8px;background:#100f18}
+footer{text-align:center;padding:55px 20px;background:var(--red);color:white}
+footer h2{font-size:clamp(2.4rem,7vw,5rem);margin-bottom:0}
+footer p{margin:8px 0}
+.small{font-size:.85rem;opacity:.8;margin-top:25px}
+@media(max-width:700px){nav{align-items:flex-start;gap:12px;flex-direction:column}nav a{margin:0 14px 0 0}header{min-height:76vh}.steps{grid-template-columns:1fr}h1{letter-spacing:-1px}.step-card img{aspect-ratio:auto}}
+</style>
+</head>
+<body>
+<header id="inicio">
+  <nav>
+    <div class="logo">MV<span>.</span> PROYECTO</div>
+    <div><a href="#guia">Pasos</a><a href="#integrantes">Integrantes</a><a href="#final">Final</a></div>
+  </nav>
+  <div class="hero">
+    <div class="eyebrow">Tutorial tecnológico</div>
+    <h1>MÁQUINA<br><span>VIRTUAL</span></h1>
+    <p>Guía visual paso a paso para crear una máquina virtual en Oracle VirtualBox e instalar Ubuntu Linux.</p>
+    <a class="button" href="#guia">Ver los pasos ↓</a>
+  </div>
+</header>
+<main>
+  <section class="intro" id="guia">
+    <div class="eyebrow">Instalación</div>
+    <h2>Aprendizaje paso a paso</h2>
+    <p class="section-lead">Explora las imágenes del proceso. Puedes tocar cualquier imagen para abrirla en tamaño completo.</p>
+  </section>
+  <section class="steps">
+
+      <article class="step-card">
+        <a href="imagenes/229341.jpg" target="_blank" rel="noopener">
+          <img src="imagenes/229341.jpg" alt="Primer paso" loading="lazy">
+        </a>
+        <div class="card-copy">
+          <span class="tag">Primer paso</span>
+          <h3>Primer paso</h3>
+          <p>Sigue las indicaciones que aparecen en la imagen para completar este paso.</p>
+        </div>
+      </article>
+    
+
+      <article class="step-card">
+        <a href="imagenes/229342.jpg" target="_blank" rel="noopener">
+          <img src="imagenes/229342.jpg" alt="Segundo paso" loading="lazy">
+        </a>
+        <div class="card-copy">
+          <span class="tag">Segundo paso</span>
+          <h3>Segundo paso</h3>
+          <p>Sigue las indicaciones que aparecen en la imagen para completar este paso.</p>
+        </div>
+      </article>
+    
+
+      <article class="step-card">
+        <a href="imagenes/229343.jpg" target="_blank" rel="noopener">
+          <img src="imagenes/229343.jpg" alt="Tercer paso" loading="lazy">
+        </a>
+        <div class="card-copy">
+          <span class="tag">Tercer paso</span>
+          <h3>Tercer paso</h3>
+          <p>Sigue las indicaciones que aparecen en la imagen para completar este paso.</p>
+        </div>
+      </article>
+    
+
+      <article class="step-card">
+        <a href="imagenes/229344.jpg" target="_blank" rel="noopener">
+          <img src="imagenes/229344.jpg" alt="Cuarto paso" loading="lazy">
+        </a>
+        <div class="card-copy">
+          <span class="tag">Cuarto paso</span>
+          <h3>Cuarto paso</h3>
+          <p>Sigue las indicaciones que aparecen en la imagen para completar este paso.</p>
+        </div>
+      </article>
+    
+
+      <article class="step-card">
+        <a href="imagenes/229345.jpg" target="_blank" rel="noopener">
+          <img src="imagenes/229345.jpg" alt="Quinto paso" loading="lazy">
+        </a>
+        <div class="card-copy">
+          <span class="tag">Quinto paso</span>
+          <h3>Quinto paso</h3>
+          <p>Sigue las indicaciones que aparecen en la imagen para completar este paso.</p>
+        </div>
+      </article>
+    
+
+      <article class="step-card">
+        <a href="imagenes/229346.jpg" target="_blank" rel="noopener">
+          <img src="imagenes/229346.jpg" alt="Sexto paso" loading="lazy">
+        </a>
+        <div class="card-copy">
+          <span class="tag">Sexto paso</span>
+          <h3>Sexto paso</h3>
+          <p>Sigue las indicaciones que aparecen en la imagen para completar este paso.</p>
+        </div>
+      </article>
+    
+
+      <article class="step-card">
+        <a href="imagenes/229347.jpg" target="_blank" rel="noopener">
+          <img src="imagenes/229347.jpg" alt="Séptimo paso" loading="lazy">
+        </a>
+        <div class="card-copy">
+          <span class="tag">Séptimo paso</span>
+          <h3>Séptimo paso</h3>
+          <p>Sigue las indicaciones que aparecen en la imagen para completar este paso.</p>
+        </div>
+      </article>
+    
+
+      <article class="step-card">
+        <a href="imagenes/229348.jpg" target="_blank" rel="noopener">
+          <img src="imagenes/229348.jpg" alt="Ubuntu funcionando" loading="lazy">
+        </a>
+        <div class="card-copy">
+          <span class="tag">Resultado final</span>
+          <h3>Ubuntu funcionando</h3>
+          <p>La máquina virtual con Ubuntu está funcionando y lista para configurarse.</p>
+        </div>
+      </article>
+    
+
+      <article class="step-card">
+        <a href="imagenes/229349.jpg" target="_blank" rel="noopener">
+          <img src="imagenes/229349.jpg" alt="Agradecimiento" loading="lazy">
+        </a>
+        <div class="card-copy">
+          <span class="tag">Cierre</span>
+          <h3>Agradecimiento</h3>
+          <p>Gracias por su atención.</p>
+        </div>
+      </article>
+    
+  </section>
+</main>
+<section class="team" id="integrantes">
+  <div class="team-inner">
+    <div class="eyebrow">Trabajo en equipo</div>
+    <h2>Integrantes del grupo</h2>
+    <p class="section-lead">Proyecto académico: Máquina Virtual.</p>
+    <div class="team-list">
+      <div class="person">Norma Adelina Ponce Flores</div>
+      <div class="person">Edwin Raúl Arriaza Victoria</div>
+      <div class="person">José Andrés Castillo Molina</div>
+      <div class="person">Krisly Melissa Archila López</div>
+      <div class="person">Marta Lorena Paxtor Vásquez</div>
+    </div>
+  </div>
+</section>
+<footer id="final">
+  <div class="eyebrow" style="color:#ffe0e5">Máquina Virtual</div>
+  <h2>¡Gracias!</h2>
+  <p>Gracias por su atención.</p>
+  <p class="small">Guía visual de VirtualBox y Ubuntu · Proyecto académico</p>
+</footer>
+</body>
+</html>
